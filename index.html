@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>JS</title>
+    
+    <style>
+    
+    </style>
+  </head>
+    
+    
+<body>
+    <h1>JAVA TASK string</h1>
+    
+    <p id="p1">This is coding team.</p>
+
+    <button onclick="myFunction()">Click Here</button>
+ 
+    <p id="Locate"></p>
+    
+    <p>The slice() method extract a part of a string
+    and returns the extracted parts in a new string:</p>
+    <p id="slice"></p>
+
+    
+    <li id="p1">hello how are you</li>
+    <p id="text1"></p>
+   
+    <li id="p2">how am i now</li>
+    <p id="text2"></p>
+   
+    
+    <li id="p3"></li>
+    <p id="text3"></p>
+   
+    <li id="p4"></li>
+    <p id="text4"></p>
+    
+    <li id="p5">hello how are you now</li>
+    <p id="text5"></p>
+      
+    <li id="p6">how am i then</li>
+    <p id="text6"></p>
+    
+     <li id="p7">HOW AM I NOW</li>
+    <p id="text7"></p>
+       
+     <li id="text8"></li>
+    
+     <li id="text9"></li>
+       
+     <li id="text10"></li>
+       
+     <li id="text11"></li>
+      
+
+
+
+
+    
+    
+    <script type="text/javascript"> 
+        function myFunction() {
+    var str = document.getElementById("p1").innerHTML;
+    var pos = str.indexOf("coding");
+    document.getElementById("Locate").innerHTML = pos;
+    
+}
+    var str = "AUDI, BENZ, BMW";
+document.getElementById("slice").innerHTML = str.slice(6,12);
+        
+        var str = document.getElementById("p1").innerHTML;
+        document.getElementById("text1").innerHTML = str.length;
+        
+        var str1 = document.getElementById("p2").innerHTML;
+    var pos = str1.search("i");
+    document.getElementById("text2").innerHTML = pos;
+        
+        var str = "Apple, Banana, Kiwi";
+        document.getElementById("text3").innerHTML = str.slice(7,13);
+        
+        var str = "duke,bmw,fascino";
+        document.getElementById("text4").innerHTML = str.substring(5,7);
+        
+        var str = document.getElementById("p5").innerHTML; 
+    var txt = str.replace("now","all");
+    document.getElementById("text5").innerHTML = txt;
+        
+         var text = document.getElementById("p6").innerHTML;
+    document.getElementById("text6").innerHTML = text.toUpperCase();
+        
+         var text = document.getElementById("p7").innerHTML;
+    document.getElementById("text7").innerHTML = text.toLowerCase();
+        
+        var text1 = "cod";
+var text2 = "ing";
+document.getElementById("text8").innerHTML = text1.concat(" ",text2);
+
+      var str = "kiet coders ";
+document.getElementById("text9").innerHTML = str.charAt(5);  
+        
+      var str = "HELLO WORLD";
+document.getElementById("text10").innerHTML = str.charCodeAt(3);  
+        
+        
+</script>
+ 
+        
+        
+    
+        </script>
+</body>
+</html>
